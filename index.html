@@ -13,8 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Cutive+Mono&family=Satisfy&display=swap"
         rel="stylesheet">
 
-
-
 <body>
     <header>
         <a class="enlace-logo" href="index.html">
@@ -23,23 +21,30 @@
         </a>
         <nav class="nav">
             <ul class="nav-menu">
-                <li><a href=" ./pages/comprar.html">COMPRAR </a> </li>
-                <li><a href="./pages/accesorios.html">ACCESORIOS</a></li>
+                <li><a href=" ./pages/comprar.html">COMPRAR </a> 
+                    <ul class="submenu">
+                        <li> <a href="./pages/comprar.html">Por aroma</a></li>
+                        <li> <a href="./pages/comprar.html">Bestsellers</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/accesorios.html">ACCESORIOS</a></li> 
                 <li><a href="./pages/galeria.html">GALERIA</a></li>
                 <li><a href="./pages/suscribirse.html">SUSCRIBIRSE</a></li>
                 <li><a href="./pages/kits.html">KITS</a></li>
             </ul>
         </nav>
-
-
+    
     </header>
 
     <main>
         <section>
-            <img class="img-home" src="./images/imghome.JPG" alt="home">
+            <div class="buttonComprar">
+                <img class="img-home"src="./images/imghome.JPG" alt="home">
+                <a href="#" alt="comprar">COMPRAR</a>
+            </div>
+            
             <div class="containerPrincipal">
                 <img src="./images/velasdecoradas.jpg" alt="veladecor">
-
                 <img src="./images/latitas.jpg" alt="lata">
                 <img src="./images/totebag.jpg" alt="totebag">
             </div>
@@ -55,11 +60,6 @@
         </section>
 
         <section>
-            <!-- <header class="title">
-                <h1>BENEFICIOS DE LA CERA DE SOYA</h1>            
-            </header> -->
-
-
             <div class="containerSoya">
                 <header class="headerSoya">
                     <h1>BENEFICIOS DE LA CERA DE SOYA</h1>
@@ -107,6 +107,7 @@
                         <img src="./images/Sustainable.jpg" alt="sustainable">
                     </div>
                 </aside>
+            </div>
     </main>
 
 
@@ -122,5 +123,4 @@
         </div>
     </footer>
 </body>
-
 </html>
