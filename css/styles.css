@@ -31,33 +31,9 @@ h2.subtitulo {
   margin-bottom: 30px;
 }
 
-.nav-menu > li{
-  display: inline-block;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  font-family: 'Space Mono', monospace;
-  text-decoration: none;
-}
-
-.nav-menu ul{
-  list-style: none;
-}
-
-.nav-menu li > a {
-  color: gray;
-  display: block;
-  text-decoration: none;
-  margin: 15px;
-  font-size: 18px;
-  font-weight: lighter;
-}
-
-.nav-menu li>a:hover {
-  background-color: gray;
-  opacity: .5;
-  color: white;
-  border-radius: 3px;
-  transition: all .3s;
+.card:hover img{
+  transition: all 0.5s ease;
+  padding: 15px;
 
 }
 
@@ -90,13 +66,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-}
-
-.img-home {
-  
- 
-  /* margin-left: 15%; */
-  padding: 10px; 
 }
 
 .buttonComprar{
@@ -211,7 +180,7 @@ header {
   grid-column: 1/6;
   background: gray;
   color: #fff;
-  font-size: medium;
+  font-size: small;
   font-weight: lighter;
   text-align: center;
   font-family: monospace;
@@ -319,6 +288,10 @@ img {
   padding-top: 1em;
   font-family: roboto mono;
   font-size: 20px;
+}
+
+.bg-lav {
+  background-color: #B4BEC9;
 }
 
 
