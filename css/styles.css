@@ -9,18 +9,30 @@ body {
   font-family: roboto mono;
 }
 
-.enlace-logo {
-  text-decoration: none;
+header {
+  background-color: black;
+  top: 0;
+  z-index: 999;
   color: white;
-  font-size: 15px;
+  text-align: center;
+  font-size: x-small;
+  letter-spacing: 4px;
 }
 
+.enlace-logo {
+  text-decoration: none;
+  color: black;
+  font-family: roboto mono;
+
+}
+
+
 .titulo {
-  font-family: 'Abel', sans-serif;
   position: center;
   font-weight: normal;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 30px;
+
 }
 
 h2.subtitulo {
@@ -28,13 +40,43 @@ h2.subtitulo {
   text-align: center;
   font-size: medium;
   font-weight: lighter;
-  margin-bottom: 30px;
+  font-size: small;
 }
 
 .card:hover img {
   transition: all 0.5s ease;
   padding: 15px;
+}
 
+.carousel-caption {
+  top: 30%;
+  bottom: auto;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.heading {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: roboto mono;
+}
+
+.sub-heading {
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: roboto mono;
+}
+
+.carousel-item {
+
+  transition-duration: 1.25s;
+  transition: scale(1.75, 1.75);
+  opacity: 0;
+}
+
+.carousel-item:hover {
+  opacity: 1;
+  transform: scale(1, 1);
 }
 
 /* SUBMENU COMPRAR */
@@ -44,7 +86,6 @@ h2.subtitulo {
   background-color: whitesmoke;
   opacity: .8;
   display: none;
-
 }
 
 .submenu li a {
@@ -52,93 +93,16 @@ h2.subtitulo {
   padding: 15px;
   color: black;
   font-size: large;
-
 }
 
-
-header {
-  background-color: black;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+.navbar-nav {
+  background-color: whitesmoke;
 }
-
-.buttonComprar {
-  display: inline-block;
-  position: relative;
-}
-
-.buttonComprar a {
-  background-color: white;
-  position: absolute;
-  bottom: 50%;
-  right: 45%;
-  text-decoration: none;
-  width: 150px;
-  border-radius: .5em;
-  color: black;
-  text-align: center;
-  font-family: 'Space Mono', monospace;
-  letter-spacing: 6px;
-  padding: 1em 1.5em;
-  font-size: large;
-  transform: transform 0.3s ease;
-}
-
-.buttonComprar a::after,
-.buttonComprar a::before {
-  content: "";
-  position: absolute;
-  opacity: 0.3;
-  background: white;
-  border-radius: inherit;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transform: transform 0.3s ease;
-
-}
-
-.buttonComprar a:hover {
-  transform: translate(-12px, -12px);
-}
-
-.buttonComprar a::after {
-  transform: translate(6px, 6px);
-}
-
-.buttonComprar a::before {
-  transform: translate(12px, 12px);
-}
-
-
-
-.containerPrincipal {
-  height: 90vh;
-  display: flex;
-  align-content: center;
-  padding: 15px;
-  justify-content: space-between;
-}
-
-.containerPrincipal img {
-  transition: all 0.5s ease;
-  padding: 15px;
-
-}
-
-.containerPrincipal img:hover {
-  cursor: pointer;
-  transform: scale(.5);
-}
-
 
 .story {
   font-family: roboto mono;
   text-align: center;
-  font-size: 26px;
+  font-size: 30px;
   padding-top: 50px;
   font-weight: lighter;
 }
@@ -149,8 +113,8 @@ header {
   text-align: center;
   max-width: 10000px;
   margin: 1.6em auto;
+  letter-spacing: 2px;
 }
-
 
 .containerSoya {
   background-color: whitesmoke;
@@ -287,7 +251,7 @@ img {
 }
 
 .bg-lav {
-  background-color: #B4BEC9;
+  background-color: lightgray;
 }
 
 
@@ -300,10 +264,11 @@ img {
   align-content: space-between;
 }
 
-.kitsregalo{
+.kitsregalo {
   text-align: center;
   font-size: medium;
 }
+
 .kits img {
   padding: 30px;
   transition: all 0.5s ease;
@@ -324,7 +289,7 @@ footer {
   padding: 25px;
   text-align: center;
   letter-spacing: 2px;
-  
+
 }
 
 .follow-us {
@@ -334,41 +299,41 @@ footer {
   font-size: medium;
   font-weight: lighter;
   padding: 20px;
-  padding-bottom:35px;
+  padding-bottom: 35px;
   font-family: roboto mono;
   letter-spacing: 3px;
 }
 
-.bi-facebook{
+.bi-facebook {
   font-size: 15px;
   margin-left: 15px;
   margin-right: 15px;
   color: white;
 }
 
-.bi-facebook:hover{
-  color:gray;
+.bi-facebook:hover {
+  color: gray;
 }
 
-.bi-whatsapp{
+.bi-whatsapp {
   font-size: 15px;
   margin-left: 15px;
   margin-right: 15px;
   color: white;
 }
 
-.bi-whatsapp:hover{
-  color:gray;
+.bi-whatsapp:hover {
+  color: gray;
 }
 
-.bi-instagram{
+.bi-instagram {
   font-size: 15px;
   margin-left: 15px;
   margin-right: 15px;
-  color: white;  
+  color: white;
 }
 
-.bi-instagram:hover{
+.bi-instagram:hover {
   color: gray;
 }
 
