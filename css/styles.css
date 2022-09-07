@@ -1,11 +1,13 @@
 header {
   background-color: black;
-  top: 0;
+  min-height: 40px;
   z-index: 999;
   color: white;
   text-align: center;
   font-size: x-small;
-  letter-spacing: 4px; }
+  letter-spacing: 4px;
+  position: sticky;
+  padding-top: 8px; }
 
 footer {
   background-color: grey;
@@ -31,27 +33,24 @@ footer {
   margin-left: 15px;
   margin-right: 15px;
   color: white; }
-
-.bi-facebook:hover {
-  color: gray; }
+  .bi-facebook:hover {
+    color: #3b5998; }
 
 .bi-whatsapp {
   font-size: 15px;
   margin-left: 15px;
   margin-right: 15px;
   color: white; }
-
-.bi-whatsapp:hover {
-  color: gray; }
+  .bi-whatsapp:hover {
+    color: #25d366; }
 
 .bi-instagram {
   font-size: 15px;
   margin-left: 15px;
   margin-right: 15px;
   color: white; }
-
-.bi-instagram:hover {
-  color: gray; }
+  .bi-instagram:hover {
+    color: #8a3ab9; }
 
 * {
   margin: 0;
@@ -59,26 +58,40 @@ footer {
   box-sizing: border-box; }
 
 body {
-  background-color: whitesmoke;
   font-family: roboto mono; }
+
+.global-atributos, .story, .categoria, .totebag, #suscripcion {
+  font-family: roboto mono;
+  text-align: center;
+  font-weight: lighter; }
 
 .enlace-logo {
   text-decoration: none;
   color: black;
-  font-family: roboto mono; }
+  font-family: roboto mono;
+  position: sticky; }
 
 .titulo {
+  padding-top: 30px;
   position: center;
   font-weight: normal;
   text-align: center;
-  font-size: 30px; }
+  font-size: 28px;
+  margin: auto;
+  min-height: 40px;
+  margin-bottom: 0; }
 
 h2.subtitulo {
   font-family: 'Space Mono', monospace;
   text-align: center;
   font-size: medium;
   font-weight: lighter;
-  font-size: small; }
+  font-size: small;
+  padding-bottom: 5px;
+  background-color: #BFBFBF; }
+
+.titulo {
+  background-color: #BFBFBF; }
 
 .card:hover img {
   transition: all 0.5s ease;
@@ -90,15 +103,13 @@ h2.subtitulo {
   cursor: pointer;
   transition: .5s; }
 
-.heading {
+.heading, .sub-heading {
   font-size: 15px;
   letter-spacing: 2px;
   font-family: roboto mono; }
 
 .sub-heading {
-  font-size: 25px;
-  letter-spacing: 2px;
-  font-family: roboto mono; }
+  font-size: 25px; }
 
 .carousel-item {
   transition-duration: 1.25s;
@@ -123,11 +134,8 @@ h2.subtitulo {
   background-color: whitesmoke; }
 
 .story {
-  font-family: roboto mono;
-  text-align: center;
   font-size: 30px;
-  padding-top: 50px;
-  font-weight: lighter; }
+  padding-top: 50px; }
 
 .boxStory {
   width: 30%;
@@ -181,11 +189,8 @@ h2.subtitulo {
     padding: 10px; }
 
 .categoria {
-  font-family: roboto mono;
-  text-align: center;
   font-size: 30px;
-  padding: 25px;
-  font-weight: lighter; }
+  padding: 25px; }
 
 .bestimg {
   width: 100%;
@@ -207,11 +212,8 @@ h2.subtitulo {
   width: 100%; }
 
 .totebag {
-  font-family: roboto mono;
-  text-align: center;
   font-size: 35px;
-  padding: 60px;
-  font-weight: lighter; }
+  padding: 60px; }
 
 .toteimg {
   width: 100%;
@@ -223,9 +225,7 @@ h2.subtitulo {
 
 #suscripcion {
   text-decoration: none;
-  text-align: center;
   padding-top: 1em;
-  font-family: roboto mono;
   font-size: 20px; }
 
 .bg-lav {

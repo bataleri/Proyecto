@@ -1,9 +1,11 @@
 header {
     background-color: black;
-    top: 0;
+    min-height: 40px;
     z-index: 999;
     color: white;
     text-align: center;
     font-size: x-small;
     letter-spacing: 4px;
+    position: sticky;
+    padding-top: 8px;
   }

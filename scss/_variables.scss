@@ -1,0 +1,25 @@
+// VARIABLES
+
+$margen: 1.6em auto;
+$fb: #3b5998;
+$insta:#8a3ab9;
+$wp:#25d366;
+
+// MAPA
+$palette: (
+          fondo1:#BFBFBF,
+          fondo2: #737373,
+          fondo3:white,
+);
+
+// MIXINS REDES SOCIALES
+
+@mixin redes($hover){
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    &:hover {
+      color: $hover;
+    }
+}

@@ -19,36 +19,16 @@ footer {
     font-family: roboto mono;
     letter-spacing: 3px;
   }
-  
+
   .bi-facebook {
-    font-size: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: white;
-  }
-  
-  .bi-facebook:hover {
-    color: gray;
+   @include redes ($fb);
   }
   
   .bi-whatsapp {
-    font-size: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: white;
+    @include redes ($wp);
   }
-  
-  .bi-whatsapp:hover {
-    color: gray;
-  }
-  
+    
   .bi-instagram {
-    font-size: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    color: white;
+    @include redes ($insta);
   }
   
-  .bi-instagram:hover {
-    color: gray;
-  }
