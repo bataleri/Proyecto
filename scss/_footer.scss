@@ -1,34 +1,33 @@
 footer {
-    background-color: grey;
-    color: #fff;
-    font-family: 'Satisfy', cursive;
-    padding: 25px;
-    text-align: center;
-    letter-spacing: 2px;
-  
-  }
-  
-  .follow-us {
-    text-decoration: none;
-    color: white;
-    text-align: start;
-    font-size: medium;
-    font-weight: lighter;
-    padding: 20px;
-    padding-bottom: 35px;
-    font-family: roboto mono;
-    letter-spacing: 3px;
-  }
+  background-color: grey;
+  color: #fff;
+  font-family: 'Satisfy', cursive;
+  padding: 25px;
+  text-align: center;
+  letter-spacing: 2px;
 
-  .bi-facebook {
-   @include redes ($fb);
-  }
-  
-  .bi-whatsapp {
-    @include redes ($wp);
-  }
-    
-  .bi-instagram {
-    @include redes ($insta);
-  }
-  
+}
+
+.follow-us {
+  text-decoration: none;
+  color: white;
+  text-align: start;
+  font-size: medium;
+  font-weight: lighter;
+  padding: 20px;
+  padding-bottom: 35px;
+  font-family: roboto mono;
+  letter-spacing: 3px;
+}
+
+.bi-facebook {
+  @include redes ($fb);
+}
+
+.bi-whatsapp {
+  @include redes ($wp);
+}
+
+.bi-instagram {
+  @include redes ($insta);
+}
