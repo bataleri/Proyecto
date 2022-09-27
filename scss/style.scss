@@ -14,6 +14,9 @@ body {
   font-family: roboto mono;
 }
 
+
+// variables
+
 .global-atributos {
   //clase creada para poder aplicar un @extend en diferentes secciones
   font-family: roboto mono;
@@ -31,13 +34,12 @@ body {
 
 .titulo {
   padding-top: 5px;
-  // position: center;
   font-weight: normal;
   text-align: center;
   font-size: 25px;
   margin: auto;
   min-height: 40px;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 h2.subtitulo {
@@ -46,8 +48,8 @@ h2.subtitulo {
   font-size: medium;
   font-weight: lighter;
   font-size: small;
-  padding-bottom: 5px;
   background-color: #BFBFBF;
+
 }
 
 .titulo {
@@ -92,7 +94,6 @@ h2.subtitulo {
   font-size: 35px;
   margin: 10px
 }
-
 
 
 //   SUBMENU COMPRAR
@@ -327,6 +328,37 @@ h2.subtitulo {
   }
 }
 
+// ERROR404
+
+.error img {
+  width: 50%;
+}
+
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 13px 30px;
+  border-radius: 15px;
+  border: none;
+  background: rgb(5, 129, 245);
+  color: white;
+  cursor: pointer;
+}
+
 // BACKGROUND
 .snowflake {
   color: #fff;
@@ -475,6 +507,7 @@ h2.subtitulo {
 }
 
 
+
 //   MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
@@ -534,5 +567,11 @@ h2.subtitulo {
   .navbar-nav {
     padding: 0;
 
+  }
+}
+
+@media screen and (max-width:630px) {
+  h1 {
+    font-size: 16px;
   }
 }
